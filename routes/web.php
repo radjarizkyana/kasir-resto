@@ -29,7 +29,7 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 Route::post('/login', [LoginController::class, 'authanticate']);
-Route::get('/logout', [LoginController::class, 'logout']);
+Route::get('/logoutphp', [LoginController::class, 'logout']);
 
 Route::resource('admin', UserController::class);
 Route::resource('menu', MenuController::class);
